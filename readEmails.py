@@ -2,8 +2,6 @@ import xlrd
 import os
 import sys
 
-#loc = '/test.xlxs'
-
 dir = os.path.dirname(__file__)
 loc = os.path.join(dir, 'test.xlsx')
 
@@ -21,8 +19,6 @@ numRows = sheet.nrows
 i = 0
 while i < numRows:
 	val = sheet.cell_value(i, 0)
-	if len(val) == 0:
-		break
 	file.write(val + "@scarletmail.rutgers.edu\n")
 	i = i + 1
 file.close()
