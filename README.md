@@ -2,7 +2,7 @@
 Python file that reads an excel sheet of RU netIDs and appends the scarletmail address so I have to do less work for USACS :D
 
 Example excel file:
-  asm229
+  asm229 
   asm229
   asm229
 
