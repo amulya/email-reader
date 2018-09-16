@@ -18,8 +18,11 @@ numRows = sheet.nrows
 #For row 0 and column 0
 i = 0
 while i < numRows:
-	val = sheet.cell_value(i, 0)
-	file.write(val + "@scarletmail.rutgers.edu\n")
+	val = str(sheet.cell_value(i, 0))
+	if len(val) > 6:
+		file.write(val +"\n")
+	else:
+		file.write(val + "@scarletmail.rutgers.edu\n")
 	i = i + 1
 file.close()
 
